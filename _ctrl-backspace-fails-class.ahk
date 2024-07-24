@@ -1,3 +1,7 @@
+; In some windows and controls, ^Backspace doesn't delete the previous word like
+; it usually does because it produces a control character. This script works
+; around that to achieve the same effect.
+
 class UI_CtrlBackspaceFails {
     static hasFocus() {
         return Boolean(
