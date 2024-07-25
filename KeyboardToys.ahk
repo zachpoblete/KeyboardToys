@@ -1,6 +1,7 @@
-﻿#Include app-edge-disable-hks.ahk
+#Include app-edge-disable-hks.ahk
 #Include app-edge-vimiumc-hks.ahk
 #Include app-uniqoda-launch.ahk
+#Include app-vs-code-rewrap.ahk
 #Include directory-hotkeys.ahk
 #Include disable-hks.ahk
 #Include disable-hyper-hk.ahk
