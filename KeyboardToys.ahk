@@ -1,5 +1,11 @@
-﻿#Include numlock-hotkeys\_numlock-hotkeys.ahk
-#Include specific-place-hotkeys\_specific-place-hotkeys.ahk
-#Include map-f13-until-f24\_map-f13-until-f24.ahk
-#Include hotkeys-disabled-everywhere\_hotkeys-disabled-everywhere.ahk
-#Include add-powertoys-hks-to-list\_add-powertoys-hks-to-list.ahk
+﻿#Include app-edge-disable-hks.ahk
+#Include app-edge-vimiumc-hks.ahk
+#Include app-uniqoda-launch.ahk
+#Include directory-hotkeys.ahk
+#Include disable-hks.ahk
+#Include disable-hyper-hk.ahk
+#Include fix-ctrl-backspace.ahk
+#Include fix-ctrl-shift-z.ahk
+#Include map-f13-until-f24.ahk
+#Include numlock-indicator.ahk
+#Include track-powertoys-hks.ahk
