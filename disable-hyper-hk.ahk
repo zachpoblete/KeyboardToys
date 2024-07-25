@@ -4,40 +4,36 @@
 ; + Alt + X opens Excel. I've disabled the Hyper key because I don't use it and
 ; have mispressed it in the past.
 
-DisableHyper()
+DisableHyperPermutations()
+DisableHyperAlphas()
 
-DisableHyper() {
-    disableHyperPermutations()
-    disableHyperAlphas()
-
-    disableHyperPermutations() {
-        hyperPermutations := [
-            "#^+Alt",
-            "#^!Shift",
-            "#+!Ctrl",
-            "^+!LWin",
-            "^+!RWin",
-        ]
-        for hyper in hyperPermutations {
-            Hotkey(hyper, mask)
-        }
-
-        mask(thisHotkey) {
-            Send("{Blind}{" A_MenuMaskKey "}")
-        }
+DisableHyperPermutations() {
+    hyperPermutations := [
+        "#^+Alt",
+        "#^!Shift",
+        "#+!Ctrl",
+        "^+!LWin",
+        "^+!RWin",
+    ]
+    for hyper in hyperPermutations {
+        Hotkey(hyper, mask)
     }
 
-    disableHyperAlphas() {
-        alphasString := "abcefghijklmnopqrstuvwxyz"
-        alphas := StrSplit(alphasString)
+    mask(thisHotkey) {
+        Send("{Blind}{" A_MenuMaskKey "}")
+    }
+}
 
-        hyper := "#^+!"
-        for alpha in alphas {
-            Hotkey(hyper . alpha, doNothing)
-        }
+DisableHyperAlphas() {
+    alphasString := "abcefghijklmnopqrstuvwxyz"
+    alphas := StrSplit(alphasString)
 
-        doNothing(thisHotkey) {
-            return
-        }
+    hyper := "#^+!"
+    for alpha in alphas {
+        Hotkey(hyper . alpha, doNothing)
+    }
+
+    doNothing(thisHotkey) {
+        return
     }
 }
