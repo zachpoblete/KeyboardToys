@@ -1,12 +1,29 @@
 ; For information on what Vimium C is:
 ; https://github.com/gdh1995/vimium-c
 
-#HotIf UI_Edge.hasFocus()
-^;::     UI_Edge.runVimiumcCommand("LinkHints.activateEdit")
+#HotIf WinActive('ahk_exe msedge.exe')
+^;::     RunVimiumcCommand("LinkHints.activateEdit")
 
-^!r::    UI_Edge.runVimiumcCommand("reopenTab")
-^!e::    UI_Edge.runVimiumcCommand("removeRightTab")
+^!r::    RunVimiumcCommand("reopenTab")
+^!e::    RunVimiumcCommand("removeRightTab")
 
-^+PgUp:: UI_Edge.runVimiumcCommand("moveTabLeft")
-^+PgDn:: UI_Edge.runVimiumcCommand("moveTabRight")
+^+PgUp:: RunVimiumcCommand("moveTabLeft")
+^+PgDn:: RunVimiumcCommand("moveTabRight")
+
+RunVimiumcCommand(command) {
+    activationKeys := commandToActivationKeysMap[command]
+    Send(activationKeys)
+
+    static commandToActivationKeysMap := Map(
+        "LinkHints.activate",              "{F13}",
+        "LinkHints.activateEdit",          "{F14}",
+        "LinkHints.activateHover",         "{F15}",
+        "LinkHints.activateCopyLinkUrl",   "{F16}",
+        "LinkHints.activateCopyLinkText",  "{F17}",
+        "reopenTab",                       "{F18}",
+        "removeRightTab",                  "{F19}",
+        "moveTabLeft",                     "{F20}",
+        "moveTabRight",                   "+{F13}",
+    )
+}
 #HotIf
