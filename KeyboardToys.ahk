@@ -1,10 +1,11 @@
-#Include app-edge-disable-hks.ahk
+﻿#Include app-edge-disable-hks.ahk
 #Include app-edge-vimiumc-hks.ahk
 #Include app-uniqoda-launch.ahk
 #Include app-vs-code-rewrap.ahk
 #Include directory-hotkeys.ahk
 #Include disable-hks.ahk
 #Include disable-hyper-hk.ahk
+#Include disable-undoing-file-operation.ahk
 #Include fix-ctrl-backspace.ahk
 #Include fix-ctrl-shift-z.ahk
 #Include map-f13-until-f24.ahk
