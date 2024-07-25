@@ -26,9 +26,9 @@ DisableHyper() {
             Send("{Blind}{" A_MenuMaskKey "}")
         }
     }
-    
+
     disableHyperAlphas() {
-        alphasString := "abcefghijklmnopqrstuvwxyz"    
+        alphasString := "abcefghijklmnopqrstuvwxyz"
         alphas := StrSplit(alphasString)
 
         hyper := "#^+!"
@@ -39,5 +39,5 @@ DisableHyper() {
         doNothing(thisHotkey) {
             return
         }
-    }    
+    }
 }

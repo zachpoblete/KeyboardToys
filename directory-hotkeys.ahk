@@ -1,3 +1,6 @@
+#Include lib
+#Include get-selected.ahk
+
 #HotIf GetKeyState('NumLock', 'T')
 ^d:: WinOpenProcessDir()
 WinOpenProcessDir() {
