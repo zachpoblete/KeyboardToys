@@ -11,9 +11,6 @@
 ^+PgDn:: RunVimiumcCommand("moveTabRight")
 
 RunVimiumcCommand(command) {
-    activationKeys := commandToActivationKeysMap[command]
-    Send(activationKeys)
-
     static commandToActivationKeysMap := Map(
         "LinkHints.activate",              "{F13}",
         "LinkHints.activateEdit",          "{F14}",
@@ -25,5 +22,8 @@ RunVimiumcCommand(command) {
         "moveTabLeft",                     "{F20}",
         "moveTabRight",                   "+{F13}",
     )
+
+    activationKeys := commandToActivationKeysMap[command]
+    Send(activationKeys)
 }
 #HotIf
