@@ -20,7 +20,8 @@ DisableHyperPermutations() {
     }
 
     mask(thisHotkey) {
-        Send("{Blind}{" A_MenuMaskKey "}")
+        NO_MAPPING := "vkFF"
+        Send("{Blind}{" . NO_MAPPING . "}")
     }
 }
 
