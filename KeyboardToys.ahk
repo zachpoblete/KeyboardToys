@@ -2,6 +2,7 @@
 #Include app-edge-vimiumc-hks.ahk
 #Include app-uniqoda-launch.ahk
 #Include app-vs-code-rewrap.ahk
+#Include close-notification-banner.ahk
 #Include disable-hks.ahk
 #Include disable-hyper-hk.ahk
 #Include disable-undoing-file-operation.ahk
