@@ -4,37 +4,38 @@
 ; + Alt + X opens Excel. I've disabled the Hyper key because I don't use it and
 ; have mispressed it in the past.
 
-DisableHyperPermutations()
-DisableHyperAlphas()
+#^+Alt::   MaskWithNoMapping()
+#^!Shift:: MaskWithNoMapping()
+#+!Ctrl::  MaskWithNoMapping()
+^+!LWin::  MaskWithNoMapping()
+^+!RWin::  MaskWithNoMapping()
 
-DisableHyperPermutations() {
-    hyperPermutations := [
-        "#^+Alt",
-        "#^!Shift",
-        "#+!Ctrl",
-        "^+!LWin",
-        "^+!RWin",
-    ]
-    for hyper in hyperPermutations {
-        Hotkey(hyper, mask)
-    }
+#^+!a:: return
+#^+!b:: return
+#^+!c:: return
+#^+!e:: return
+#^+!f:: return
+#^+!g:: return
+#^+!h:: return
+#^+!i:: return
+#^+!j:: return
+#^+!k:: return
+#^+!l:: return
+#^+!m:: return
+#^+!n:: return
+#^+!o:: return
+#^+!p:: return
+#^+!q:: return
+#^+!r:: return
+#^+!s:: return
+#^+!t:: return
+#^+!u:: return
+#^+!v:: return
+#^+!w:: return
+#^+!x:: return
+#^+!y:: return
+#^+!z:: return
 
-    mask(thisHotkey) {
-        NO_MAPPING := "vkFF"
-        Send("{Blind}{" . NO_MAPPING . "}")
-    }
-}
-
-DisableHyperAlphas() {
-    alphasString := "abcefghijklmnopqrstuvwxyz"
-    alphas := StrSplit(alphasString)
-
-    hyper := "#^+!"
-    for alpha in alphas {
-        Hotkey(hyper . alpha, doNothing)
-    }
-
-    doNothing(thisHotkey) {
-        return
-    }
+MaskWithNoMapping() {
+    Send("{Blind}{vkFF}")
 }
