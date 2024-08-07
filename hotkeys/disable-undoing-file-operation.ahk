@@ -1,4 +1,4 @@
-#Include lib
+#Include ahk-utils
 #Include control-class-nn-focused.ahk
 
 ; Disable ^z for undoing changes to files because it can delete files without

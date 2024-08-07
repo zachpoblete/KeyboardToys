@@ -1,4 +1,4 @@
-#Include lib
+#Include ahk-utils
 #Include can-redo-with-ctrl-y.ahk
 
 #HotIf CanRedoWithCtrlY()
