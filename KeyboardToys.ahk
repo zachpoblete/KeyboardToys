@@ -1,4 +1,6 @@
-﻿#Include hotkeys
+﻿#Requires AutoHotkey v2.0
+
+#Include hotkeys
 #Include app-edge-disable-hks.ahk
 #Include app-edge-vimiumc-hks.ahk
 #Include app-uniqoda-launch.ahk
