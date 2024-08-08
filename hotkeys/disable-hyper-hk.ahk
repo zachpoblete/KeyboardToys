@@ -1,3 +1,6 @@
+#Include ahk-utils
+#Include default-settings.ahk
+
 ; The Hyper key is a key activated by Win + Ctrl + Shift + Alt (or any
 ; permutation of that). On its own, it launches the Office app and, when used
 ; with an alpha key, opens other Office apps. For example, Win + Ctrl + Shift

@@ -1,4 +1,5 @@
 #Include ahk-utils
+#Include default-settings.ahk
 #Include control-class-nn-focused.ahk
 #Include get-selected.ahk
 

@@ -1,3 +1,6 @@
+#Include ahk-utils
+#Include default-settings.ahk
+
 ; Rewrap is a VS Code extension that hard word wraps text at a given column:
 ; https://marketplace.visualstudio.com/items?itemName=stkb.rewrap
 

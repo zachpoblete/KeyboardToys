@@ -1,3 +1,6 @@
+#Include ahk-utils
+#Include default-settings.ahk
+
 /**
  * Open uniqoda.
  */

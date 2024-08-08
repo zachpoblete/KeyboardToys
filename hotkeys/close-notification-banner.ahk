@@ -1,3 +1,6 @@
+#Include ahk-utils
+#Include default-settings.ahk
+
 ; Close the persistent notification banner. (I've manually set the notification
 ; banner to be persistent to not miss anything.)
 #w:: {

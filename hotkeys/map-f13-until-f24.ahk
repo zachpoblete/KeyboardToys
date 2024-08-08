@@ -1,3 +1,6 @@
+#Include ahk-utils
+#Include default-settings.ahk
+
 ; Looping Hotkey() is less readable in this case.
 #HotIf GetKeyState("NumLock", "T")
 F3::  F13

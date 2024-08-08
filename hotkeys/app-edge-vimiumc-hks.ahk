@@ -1,3 +1,6 @@
+#Include ahk-utils
+#Include default-settings.ahk
+
 ; For information on what Vimium C is:
 ; https://github.com/gdh1995/vimium-c
 

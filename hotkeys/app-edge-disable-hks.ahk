@@ -1,3 +1,6 @@
+#Include ahk-utils
+#Include default-settings.ahk
+
 #HotIf WinActive('ahk_exe msedge.exe')
 ; Disable because destructive/annoying and easily mispressed.
 ^+Delete::  ; Clears browsing data
