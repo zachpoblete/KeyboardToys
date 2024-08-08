@@ -1,5 +1,7 @@
 ﻿#Requires AutoHotkey v2.0
 
+A_IconTip := "KeyboardToys"
+
 #Include hotkeys
 #Include app-edge-disable-hks.ahk
 #Include app-edge-vimiumc-hks.ahk
