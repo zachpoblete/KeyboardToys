@@ -2,7 +2,8 @@
 ; https://github.com/gdh1995/vimium-c
 
 #HotIf WinActive('ahk_exe msedge.exe')
-^;::     RunVimiumcCommand("LinkHints.activateEdit")
+^;::     RunVimiumcCommand("LinkHints.activate")
+^+;::    RunVimiumcCommand("LinkHints.activateEdit")
 
 ^!r::    RunVimiumcCommand("reopenTab")
 ^!e::    RunVimiumcCommand("removeRightTab")
